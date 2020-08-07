@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <style>
+            #wrap {
+                width: 1000px;
+                margin: 0 auto;
+            }
+            #header {
+                border-bottom: 1px solid #cccccc;
+            }
+            #content a {
+                text-decoration: none;
+            }
+            #content a::after{
+                content: '-' attr(href);
+            }
+            #content li:not(.fa){
+                background-color: yellow;
+            }
+            #footer ul {
+                overflow: hidden;
+                border: 2px solid #cccccc;
+            }
+            #footer ul li {
+                list-style: none;
+                float: left; padding: 20px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="header">
+                <h1>weekly connect wbsite</h1>
+            </div>
+
+            <div id="content">
+                <ul>
+                    <li><a href="http://www.naver.com">네이버</a></li>
+                    <li class="fa"><a href="http://www.googele.com">구글</a></li>
+                    <li><a href="http://www.daum.net">다음</a></li>
+                    <li class="fa"><a href="http://www.daum.net">다음</a></li>
+                </ul>
+            </div>
+
+            <div id="footer">
+                <ul>
+                    <li><img src="숨고1.png" alt=""></li>
+                    <li><img src="숨고2.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
